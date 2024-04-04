@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gravitational Interactivity Calculator</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        .tab {
+            overflow: hidden;
+            border: 1px solid #ccc;
+            background-color: #f1f1f1;
+            margin: 20px auto;
+            text-align: center;
+        }
+
+        .tab button {
+            background-color: inherit;
+            border: none;
+            outline: none;
+            cursor: pointer;
+            padding: 14px 16px;
+            transition: 0.3s;
+            font-size: 18px;
+            color: black; /* Set text color to black */
+        }
+
+        .tab button:hover {
+            background-color: #ddd;
+        }
+
+        .tab button.active {
+            background-color: #ccc;
+        }
+
+        .tabcontent {
+            display: none;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-top: none;
+            margin: auto;
+            max-width: 600px;
+            text-align: left;
+        }
+
+        input[type="text"] {
+            width: 150px;
+            padding: 10px;
+            margin: 5px;
+            font-size: 16px;
+        }
+
+        button {
+            margin-top: 10px;
+            padding: 12px 24px;
+            font-size: 18px;
+            cursor: pointer;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+        }
+
+        #key {
+            text-align: center;
+            font-size: 14px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="tab">
+    <button class="tablinks" onclick="openTab(event, 'gravitational')">Gravitational Interactivity</button>
+    <button class="tablinks" onclick="openTab(event, 'population')">Population Interactivity</button>
+    <button class="tablinks" onclick="openTab(event, 'populationGravitational')">Gravitational Interactivity of Population</button>
+    <button class="tablinks" onclick="openTab(event, 'populationCelestial')">Population to Celestial Body Gravitational Interactivity</button>
+    <button class="tablinks" onclick="openTab(event, 'about')">About</button>
+    <button class="tablinks" onclick="openTab(event, 'contact')">Contact</button>
+</div>
+
+<div id="gravitational" class="tabcontent">
+    <h3>Gravitational Interactivity</h3>
+    <div>
+        <label for="mass1">Mass 1:</label>
+        <input type="text" id="mass1_gravitational">
+    </div>
+    <div>
+        <label for="mass2">Mass 2:</label>
+        <input type="text" id="mass2_gravitational">
+    </div>
+    <div>
+        <label for="distance">Distance:</label>
+        <input type="text" id="distance_gravitational">
+    </div>
+    <button onclick="calculate('gravitational')">Calculate</button>
+    <div id="gravitationalResult"></div>
+</div>
+
+<div id="population" class="tabcontent">
+    <h3>Population Interactivity</h3>
+    <div>
+        <label for="population1">Population 1:</label>
+        <input type="text" id="population1_population">
+    </div>
+    <div>
+        <label for="population2">Population 2:</label>
+        <input type="text" id="population2_population">
+    </div>
+    <div>
+        <label for="distancePopulation">Distance:</label>
+        <input type="text" id="distance_population">
+    </div>
+    <button onclick="calculate('population')">Calculate</button>
+    <div id="populationResult"></div>
+</div>
+
+<div id="populationGravitational" class="tabcontent">
+    <h3>Gravitational Interactivity of Population</h3>
+    <div>
+        <label for="population1Population">Population 1:</label>
+        <input type="text" id="population1_populationGravitational">
+    </div>
+    <div>
+        <label for="population2Population">Population 2:</label>
+        <input type="text" id="population2_populationGravitational">
+    </div>
+    <div>
+        <label for="distancePopulationGravitational">Distance:</label>
+        <input type="text" id="distance_populationGravitational">
+    </div>
+    <button onclick="calculate('populationGravitational')">Calculate</button>
+    <div id="populationGravitationalResult"></div>
+</div>
+
+<div id="populationCelestial" class="tabcontent">
+    <h3>Population to Celestial Body Gravitational Interactivity</h3>
+    <div>
+        <label for="populationPopulationCelestial">Population:</label>
+        <input type="text" id="population_populationCelestial">
+    </div>
+    <div>
+        <label for="massPopulationCelestial">Mass of Celestial Body:</label>
+        <input type="text" id="mass_populationCelestial">
+    </div>
+    <div>
+        <label for="distancePopulationCelestial">Distance:</label>
+        <input type="text" id="distance_populationCelestial">
+    </div>
+    <button onclick="calculate('populationCelestial')">Calculate</button>
+    <div id="populationCelestialResult"></div>
+</div>
+
+<div id="about" class="tabcontent">
+    <h3>About</h3>
+    <p>The Gravitational Interactivity Calculator serves multiple purposes in both human geography and astrophysics:</p>
+    <p><strong>In Human Geography:</strong> <!-- The Gravity Model in Geography -->
+<h2>The Gravity Model in Geography</h2>
+<p>The Gravity Model in geography describes the interaction between two places based on their population sizes and the distance between them. Here's the equation and its explanation:</p>
+<!-- Gravity Model Equation -->
+<blockquote>
+  <p><em>T</em> = <em>P<sub>1</sub></em> × <em>P<sub>2</sub></em> / <em>d<sup>2</sup></em></p>
+</blockquote>
+<!-- Explanation -->
+<p>Where:</p>
+<ul>
+  <li><em>T</em> represents the measure of interaction between two places.</li>
+  <li><em>P<sub>1</sub></em> and <em>P<sub>2</sub></em> are the populations of the two places.</li>
+  <li><em>d</em> is the distance between the two places.</li>
+</ul>
+<!-- Explanation of terms -->
+<p><strong>Explanation of terms:</strong></p>
+<ul>
+  <li><strong>Population:</strong> Larger populations in both places imply more potential interactions, as there are more people to engage in activities like trade, migration, or communication.</li>
+  <li><strong>Distance:</strong> The distance between places is a crucial factor influencing interaction. The farther apart two places are, the less likely it is for interactions to occur frequently, as transportation costs, time, and other barriers increase with distance.</li>
+</ul>
+<!-- Application -->
+<p><strong>Application:</strong></p>
+<ul>
+  <li>The Gravity Model is commonly used in various fields of geography, including urban studies, transportation planning, and regional economics.</li>
+  <li>It helps in predicting and understanding patterns of migration, trade flows, communication networks, and the distribution of services and resources.</li>
+  <li>By quantifying the potential interactions between locations, policymakers, urban planners, and businesses can make informed decisions regarding infrastructure development, resource allocation, and market strategies.</li>
+</ul>
+<p>In summary, the Gravity Model provides a simple yet powerful framework for analyzing the spatial interactions between places based on their populations and distances, akin to Newton's Law of Universal Gravitation in physics.</p>It can be used to estimate the gravitational interactivity between two geographical regions based on their populations and distances. This can have applications in urban planning, transportation, and regional development.</p>
+    <p><strong>In Astrophysics:</strong> <!-- Isaac Newton's Law of Universal Gravitation -->
+<h2>Isaac Newton's Law of Universal Gravitation</h2>
+<p>Isaac Newton's Law of Universal Gravitation, proposed in his work "Philosophiæ Naturalis Principia Mathematica" in 1687, describes the gravitational interaction between two point masses. According to this law, every particle of matter in the universe attracts every other particle with a force that is directly proportional to the product of their masses and inversely proportional to the square of the distance between their centers.</p>
+<p>Mathematically, the gravitational force <em>F</em> between two point masses <em>m<sub>1</sub></em> and <em>m<sub>2</sub></em> separated by a distance <em>r</em> is given by:</p>
+<blockquote>
+  <p><em>F</em> = <em>G</em> × <em>m<sub>1</sub></em> × <em>m<sub>2</sub></em> / <em>r<sup>2</sup></em></p>
+</blockquote>
+<p>Where:</p>
+<ul>
+  <li><em>F</em> is the gravitational force between the masses.</li>
+  <li><em>G</em> is the gravitational constant, approximately 6.674 × 10<sup>-11</sup> m<sup>3</sup> kg<sup>-1</sup> s<sup>-2</sup>.</li>
+  <li><em>m<sub>1</sub></em> and <em>m<sub>2</sub></em> are the masses of the two objects.</li>
+  <li><em>r</em> is the distance between the centers of the two masses.</li>
+</ul>
+<!-- Explanation -->
+<p>This law encapsulates the concept that all objects with mass attract each other with a force proportional to their masses and inversely proportional to the square of the distance between them. It is a fundamental principle of classical mechanics and forms the basis for understanding the motion of celestial bodies, such as planets, moons, and stars.</p>
+<p>Newton's Law of Gravitation revolutionized our understanding of the physical world by providing a mathematical framework to describe the force responsible for phenomena like the motion of planets around the Sun, the tides, and the falling of objects on Earth. It laid the foundation for the development of classical mechanics and contributed significantly to the advancement of physics and astronomy.</p>
+The calculator allows for the computation of gravitational interactions between celestial bodies based on their masses and distances. This is crucial for understanding the dynamics of celestial objects, such as planets, stars, and galaxies, as well as phenomena like gravitational waves.</p>
+</div>
+
+<div id="contact" class="tabcontent">
+    <h3>Contact</h3>
+    <p>If you have any questions or feedback, feel free to contact us:</p>
+    <p>Email: pridwenllc@gmail.com</p>
+    <p>Phone: +1 (860) 978-7261</p>
+</div>
+
+<script>
+    function openTab(evt, tabName) {
+        var i, tabcontent, tablinks;
+        tabcontent = document.getElementsByClassName("tabcontent");
+        for (i = 0; i < tabcontent.length; i++) {
+            tabcontent[i].style.display = "none";
+        }
+        tablinks = document.getElementsByClassName("tablinks");
+        for (i = 0; i < tablinks.length; i++) {
+            tablinks[i].className = tablinks[i].className.replace(" active", "");
+        }
+        document.getElementById(tabName).style.display = "block";
+        evt.currentTarget.className += " active";
+    }
+
+    function calculate(tab) {
+        var mass1, mass2, population1, population2, population, mass, distance;
+
+        switch (tab) {
+            case 'gravitational':
+                mass1 = parseFloat(document.getElementById('mass1_gravitational').value);
+                mass2 = parseFloat(document.getElementById('mass2_gravitational').value);
+                distance = parseFloat(document.getElementById('distance_gravitational').value);
+                break;
+            case 'population':
+                population1 = parseFloat(document.getElementById('population1_population').value);
+                population2 = parseFloat(document.getElementById('population2_population').value);
+                distance = parseFloat(document.getElementById('distance_population').value);
+                break;
+            case 'populationGravitational':
+                population1 = parseFloat(document.getElementById('population1_populationGravitational').value);
+                population2 = parseFloat(document.getElementById('population2_populationGravitational').value);
+                distance = parseFloat(document.getElementById('distance_populationGravitational').value);
+                break;
+            case 'populationCelestial':
+                population = parseFloat(document.getElementById('population_populationCelestial').value);
+                mass = parseFloat(document.getElementById('mass_populationCelestial').value);
+                distance = parseFloat(document.getElementById('distance_populationCelestial').value);
+                break;
+        }
+
+        var gravitationalConstant = 6.674 * Math.pow(10, -11);
+
+        if (tab === 'gravitational') {
+            var gravitationalResult = gravitationalConstant * (mass1 * mass2) / Math.pow(distance, 2);
+            document.getElementById('gravitationalResult').innerText = "Gravitational Interactivity: " + gravitationalResult.toExponential(4) + " N";
+        } else if (tab === 'population') {
+            var populationResult = (population1 * population2) / Math.pow(distance, 2);
+            document.getElementById('populationResult').innerText = "Population Interactivity: " + populationResult.toExponential(4) + " N";
+        } else if (tab === 'populationGravitational') {
+            var populationGravitationalResult = gravitationalConstant * (population1 * 72) * (population2 * 72) / Math.pow(distance, 2);
+            document.getElementById('populationGravitationalResult').innerText = "Gravitational Interactivity of Population: " + populationGravitationalResult.toExponential(4) + " N";
+        } else if (tab === 'populationCelestial') {
+            var populationCelestialResult = gravitationalConstant * (population * 72) * mass / Math.pow(distance, 2);
+            document.getElementById('populationCelestialResult').innerText = "Population to Celestial Body Gravitational Interactivity: " + populationCelestialResult.toExponential(4) + " N";
+        }
+    }
+</script>
+
+</body>
+</html>
